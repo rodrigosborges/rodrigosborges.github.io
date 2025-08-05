@@ -118,12 +118,21 @@ function Rise() {
 }
 
 window.onload = function () {
-    setTimeout(() => {
+    const overlay = document.querySelector(".touch-overlay");
+    const audio = document.getElementById("audios");
 
-        timer = setInterval(() => {
-            Next();
-        }, 100);
+    overlay.addEventListener("click", () => {
+        // Tocar música
+        audio.play();
 
+        // Esconder tela inicial
+        overlay.style.display = "none";
 
-    }, 7000);
+        // Iniciar animação após 0,5s
+        setTimeout(() => {
+            timer = setInterval(() => {
+                Next();
+            }, 100); // você pode ajustar a velocidade aqui
+        }, 7000);
+    });
 };

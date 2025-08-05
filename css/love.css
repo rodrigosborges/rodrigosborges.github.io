@@ -197,5 +197,27 @@ body {
     z-index: 999;
 }
 
+.touch-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.touch-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #e63946;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    user-select: none;
+}
 /*---------------------- footer -------------------------*/
 
