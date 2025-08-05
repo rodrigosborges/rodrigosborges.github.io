@@ -125,6 +125,11 @@ window.onload = function () {
         // Tocar música
         audio.play();
 
+        // Mostrar GIF
+        const gif = document.getElementById("gifImage");
+        gif.src = "images/biubiubiu.gif";
+        gif.style.display = "block";
+
         // Esconder tela inicial
         overlay.style.display = "none";
 
@@ -132,7 +137,7 @@ window.onload = function () {
         setTimeout(() => {
             timer = setInterval(() => {
                 Next();
-            }, 100); // você pode ajustar a velocidade aqui
+            }, 100);
         }, 7000);
     });
 };
